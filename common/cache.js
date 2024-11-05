@@ -1,7 +1,7 @@
 // https://github.com/isaacs/node-lru-cache
 const LRU = require('lru-cache');
 
-const cacheTime = process.env.CACHE_TIME || 100 * 60; // 100 min
+const cacheTime = process.env.CACHE_TIME || 60; // 100 min
 const maxCacheItems = process.env.MAX_CACHE_ITEMS || 1024;
 
 const options = {
